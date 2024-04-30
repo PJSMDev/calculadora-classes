@@ -10,7 +10,7 @@ namespace E06_Calculadora_v02_ComClasses
 {
     internal class Calculator
     {
-        public string[] menu =
+        public string[] menu =      // o menu da calculadora não devia estar na calculadora -> Utility da Calculadora
         {
             "+  Soma",
             "-  Subtração",

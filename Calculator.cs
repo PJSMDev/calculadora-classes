@@ -82,25 +82,6 @@ namespace E06_Calculadora_v02_ComClasses
             Result = Value1 * Value2; 
         }
 
-        // TODO PauloMelo: desta forma não consigo evitar que depois do print de "Impossível" o resultado seja calculado
-        /*
-            3 / 0
-            Impossível
-            3 / 0 = 0
-        */
-        //public void Div() 
-        //{
-        //    if (Value2 == 0) 
-        //    {
-        //        Impossible();
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        Result = Value1 / Value2;
-        //    }
-        //}
-
         public void Div()
         {
             Result = Value1 / Value2;
@@ -116,7 +97,6 @@ namespace E06_Calculadora_v02_ComClasses
             Utility.WriteMessage("Operação inválida", "", "\n");
         }
 
-        // TODO PauloMelo: evita que o resultado seja impresso depois de uma divisão impossível mas a PrintResult() não está a executar duas tarefas?
         public void PrintResult()
         {
             if (Value2 == 0 && Operator == "/")
